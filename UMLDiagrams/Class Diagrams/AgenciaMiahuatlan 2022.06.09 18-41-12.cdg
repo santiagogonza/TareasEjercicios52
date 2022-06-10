@@ -2,7 +2,7 @@
 
 <ClassDiagram name="AgenciaMiahuatlan">
   <ClassDiagramComponents>
-    <Class name="TransporteContoller" package="controller" visibility="public" xPosition="127.0" yPosition="255.0">
+    <Class name="TransporteContoller" package="controller" visibility="public" xPosition="18.0" yPosition="81.0">
       <Fields>
         <Field name="trasM" type="TransporteModel" visibility="package"/>
       </Fields>
@@ -26,7 +26,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="DestinoController" package="controller" visibility="public" xPosition="1565.0" yPosition="650.0">
+    <Class name="DestinoController" package="controller" visibility="public" xPosition="1010.0" yPosition="880.0">
       <Fields>
         <Field name="destinoM" type="DestinoModel" visibility="package"/>
       </Fields>
@@ -54,7 +54,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="TransporteView" package="view" visibility="public" xPosition="683.0" yPosition="52.0">
+    <Class name="TransporteView" package="view" visibility="public" xPosition="641.0" yPosition="52.0">
       <Fields>
         <Field name="model" type="DefaultTableModel" visibility="private"/>
         <Field name="listaTransporte" type="List&lt;Transporte&gt;" visibility="private"/>
@@ -116,7 +116,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Login" package="view" visibility="public" xPosition="2049.0" yPosition="881.0">
+    <Class name="Login" package="view" visibility="public" xPosition="1724.0" yPosition="927.0">
       <Fields>
         <Field name="jButtonIngresar" type="javax.swing.JButton" visibility="private"/>
         <Field name="jButtonSalir" type="javax.swing.JButton" visibility="private"/>
@@ -150,7 +150,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Reservacion" package="view" visibility="public" xPosition="2060.0" yPosition="1278.0">
+    <Class name="Reservacion" package="view" visibility="public" xPosition="1699.0" yPosition="1329.0">
       <Fields>
         <Field name="desktopPane" type="javax.swing.JDesktopPane" visibility="private"/>
         <Field name="fileMenu" type="javax.swing.JMenu" visibility="private"/>
@@ -190,7 +190,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Principal" package="view" visibility="public" xPosition="1488.0" yPosition="1759.0">
+    <Class name="Principal" package="view" visibility="public" xPosition="1484.0" yPosition="18.0">
       <Fields>
         <Field name="modelo" type="DefaultTableModel" visibility="private"/>
         <Field name="log" type="Login" visibility="package"/>
@@ -273,7 +273,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="DestinoModel" package="model" visibility="public" xPosition="2250.0" yPosition="147.0">
+    <Class name="DestinoModel" package="model" visibility="public" xPosition="745.0" yPosition="1095.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -299,7 +299,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ViajeModel" package="model" visibility="public" xPosition="642.0" yPosition="1232.0">
+    <Class name="ViajeModel" package="model" visibility="public" xPosition="37.0" yPosition="1242.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -312,7 +312,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="TransporteModel" package="model" visibility="public" xPosition="30.0" yPosition="499.0">
+    <Class name="TransporteModel" package="model" visibility="public" xPosition="18.0" yPosition="298.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -338,7 +338,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Viaje" package="pojo" visibility="public" xPosition="105.0" yPosition="1132.0">
+    <Class name="Viaje" package="pojo" visibility="public" xPosition="18.0" yPosition="848.0">
       <Fields>
         <Field name="codigo" type="long" visibility="private"/>
         <Field name="destino" type="String" visibility="private"/>
@@ -379,7 +379,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Transporte" package="pojo" visibility="public" xPosition="503.0" yPosition="769.0">
+    <Class name="Transporte" package="pojo" visibility="public" xPosition="18.0" yPosition="501.0">
       <Fields>
         <Field name="idTranspor" type="long" visibility="private"/>
         <Field name="numAsiento" type="int" visibility="private"/>
@@ -414,7 +414,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Destino" package="pojo" visibility="public" xPosition="1577.0" yPosition="94.0">
+    <Class name="Destino" package="pojo" visibility="public" xPosition="993.0" yPosition="1329.0">
       <Fields>
         <Field name="idlugar" type="long" visibility="private"/>
         <Field name="nombre" type="String" visibility="private"/>
@@ -455,7 +455,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Cliente" package="pojo" visibility="public" xPosition="2254.0" yPosition="371.0">
+    <Class name="Cliente" package="pojo" visibility="public" xPosition="18.0" yPosition="1380.0">
       <Fields>
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="apellidos" type="String" visibility="private"/>
@@ -492,18 +492,18 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="trasM" source="controller.TransporteContoller" target="model.TransporteModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="TrasnporteC" source="view.TransporteView" target="controller.TransporteContoller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="log" source="view.Principal" target="view.Login" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="listaTransporte" source="view.TransporteView" target="pojo.Transporte" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Transporte&gt;"/>
-    <HasRelation name="destinoM" source="controller.DestinoController" target="model.DestinoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="DestinoC" source="view.Principal" target="controller.DestinoController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="controller.DestinoController" target="pojo.Destino" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="controller.TransporteContoller" target="pojo.Transporte" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="model.TransporteModel" target="pojo.Transporte" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="model.ViajeModel" target="pojo.Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="model.DestinoModel" target="pojo.Destino" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="log" source="view.Principal" target="view.Login" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="TrasnporteC" source="view.TransporteView" target="controller.TransporteContoller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaTransporte" source="view.TransporteView" target="pojo.Transporte" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Transporte&gt;"/>
+    <UseRelation source="controller.TransporteContoller" target="pojo.Transporte" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="trans" source="view.TransporteView" target="pojo.Transporte" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.TransporteModel" target="pojo.Transporte" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="trasM" source="controller.TransporteContoller" target="model.TransporteModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="DestinoC" source="view.Principal" target="controller.DestinoController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="listaDestino" source="view.Principal" target="pojo.Destino" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Destino&gt;"/>
+    <UseRelation source="model.DestinoModel" target="pojo.Destino" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controller.DestinoController" target="pojo.Destino" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="destinoM" source="controller.DestinoController" target="model.DestinoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
