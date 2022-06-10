@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AgenciaMiahuatlan">
+  <ClassDiagramComponents>
+    <Class name="TransporteContoller" package="controller" visibility="public" xPosition="127.0" yPosition="255.0">
+      <Fields>
+        <Field name="trasM" type="TransporteModel" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="Transporte" name="transporte"/>
+        </Method>
+        <Method name="mostrarTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="DefaultTableModel" name="modelo"/>
+        </Method>
+        <Method name="actualizarTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="Transporte" name="transporte"/>
+        </Method>
+        <Method name="obtenerTransporte" returnType="Transporte" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DestinoController" package="controller" visibility="public" xPosition="1565.0" yPosition="650.0">
+      <Fields>
+        <Field name="destinoM" type="DestinoModel" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="Destino" name="destino"/>
+        </Method>
+        <Method name="eliminarDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="mostrarDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="DefaultTableModel" name="modelo"/>
+        </Method>
+        <Method name="actualizarDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="Destino" name="destino"/>
+        </Method>
+        <Method name="obtenerUnDestino" returnType="Destino" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TransporteView" package="view" visibility="public" xPosition="683.0" yPosition="52.0">
+      <Fields>
+        <Field name="model" type="DefaultTableModel" visibility="private"/>
+        <Field name="listaTransporte" type="List&lt;Transporte&gt;" visibility="private"/>
+        <Field name="TrasnporteC" type="TransporteContoller" visibility="private"/>
+        <Field name="trans" type="Transporte" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2Elim" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3Actu" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonAgregar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuBar2" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jTextFielAcien" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFielNom" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarTransporte" returnType="void" visibility="public"/>
+        <Method name="agregarTransportes" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jMenuItem1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonAgregarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTable1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ElimActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ElimMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActuActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Login" package="view" visibility="public" xPosition="2049.0" yPosition="881.0">
+      <Fields>
+        <Field name="jButtonIngresar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonSalir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1Usuario" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2Paword" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanelLogin" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="pasword" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="usuario" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="paswordActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonIngresarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonSalirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Reservacion" package="view" visibility="public" xPosition="2060.0" yPosition="1278.0">
+      <Fields>
+        <Field name="desktopPane" type="javax.swing.JDesktopPane" visibility="private"/>
+        <Field name="fileMenu" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanelReservacion" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextFielSolicitar" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="menuBar" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="openMenuItem" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="saveMenuItem" type="javax.swing.JMenuItem" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="saveMenuItemActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="openMenuItemActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFielSolicitarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="view" visibility="public" xPosition="1488.0" yPosition="1759.0">
+      <Fields>
+        <Field name="modelo" type="DefaultTableModel" visibility="private"/>
+        <Field name="log" type="Login" visibility="package"/>
+        <Field name="listaDestino" type="List&lt;Destino&gt;" visibility="private"/>
+        <Field name="DestinoC" type="DestinoController" visibility="private"/>
+        <Field name="fileMenu" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanelPrincipal" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jTextFielCp" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFielDir" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFielNom" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFielTel" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="menuBar" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="openMenuItem" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="saveAsMenuItem" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="saveMenuItem" type="javax.swing.JMenuItem" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarDestino" returnType="void" visibility="public"/>
+        <Method name="agregarDatos" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="openMenuItemActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="saveMenuItemMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="fileMenuActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="saveMenuItemActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="saveAsMenuItemActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFielNomActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFielDirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTable1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton5MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DestinoModel" package="model" visibility="public" xPosition="2250.0" yPosition="147.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="crearDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="Destino" name="destino"/>
+        </Method>
+        <Method name="obtenerUnDestino" returnType="Destino" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="eliminarDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="actualizarDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="Destino" name="destino"/>
+        </Method>
+        <Method name="mostrarDestino" returnType="void" visibility="public">
+          <Argument type="List&lt;Destino&gt;" name="lista"/>
+          <Argument type="DefaultTableModel" name="modelo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ViajeModel" package="model" visibility="public" xPosition="642.0" yPosition="1232.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="crearViaje" returnType="List&lt;Viaje&gt;" visibility="public">
+          <Argument type="List&lt;Viaje&gt;" name="lista1"/>
+          <Argument type="Viaje" name="viaje"/>
+        </Method>
+        <Method name="mostrarViaje" returnType="void" visibility="public">
+          <Argument type="List&lt;Viaje&gt;" name="lista1"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TransporteModel" package="model" visibility="public" xPosition="30.0" yPosition="499.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="crearTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="Transporte" name="transporte"/>
+        </Method>
+        <Method name="obtenerTransporte" returnType="Transporte" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="eliminarTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="actualizarTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="Transporte" name="transport"/>
+        </Method>
+        <Method name="mostrarTransporte" returnType="void" visibility="public">
+          <Argument type="List&lt;Transporte&gt;" name="lista"/>
+          <Argument type="DefaultTableModel" name="modelo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Viaje" package="pojo" visibility="public" xPosition="105.0" yPosition="1132.0">
+      <Fields>
+        <Field name="codigo" type="long" visibility="private"/>
+        <Field name="destino" type="String" visibility="private"/>
+        <Field name="salida" type="String" visibility="private"/>
+        <Field name="regreso" type="String" visibility="private"/>
+        <Field name="precio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="long" name="codigo"/>
+          <Argument type="String" name="destino"/>
+          <Argument type="String" name="salida"/>
+          <Argument type="String" name="regreso"/>
+          <Argument type="int" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigo" returnType="long" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="long" name="codigo"/>
+        </Method>
+        <Method name="getDestino" returnType="String" visibility="public"/>
+        <Method name="setDestino" returnType="void" visibility="public">
+          <Argument type="String" name="destino"/>
+        </Method>
+        <Method name="getSalida" returnType="String" visibility="public"/>
+        <Method name="setSalida" returnType="void" visibility="public">
+          <Argument type="String" name="salida"/>
+        </Method>
+        <Method name="getRegreso" returnType="String" visibility="public"/>
+        <Method name="setRegreso" returnType="void" visibility="public">
+          <Argument type="String" name="regreso"/>
+        </Method>
+        <Method name="getPrecio" returnType="int" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="int" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Transporte" package="pojo" visibility="public" xPosition="503.0" yPosition="769.0">
+      <Fields>
+        <Field name="idTranspor" type="long" visibility="private"/>
+        <Field name="numAsiento" type="int" visibility="private"/>
+        <Field name="nombreTransport" type="String" visibility="private"/>
+        <Field name="precio" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="long" name="idTranspor"/>
+          <Argument type="int" name="numAsiento"/>
+          <Argument type="String" name="nombreTransport"/>
+          <Argument type="int" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdTranspor" returnType="long" visibility="public"/>
+        <Method name="setIdTranspor" returnType="void" visibility="public">
+          <Argument type="long" name="idTranspor"/>
+        </Method>
+        <Method name="getNumAsiento" returnType="int" visibility="public"/>
+        <Method name="setNumAsiento" returnType="void" visibility="public">
+          <Argument type="int" name="numAsiento"/>
+        </Method>
+        <Method name="getNombreTransport" returnType="String" visibility="public"/>
+        <Method name="setNombreTransport" returnType="void" visibility="public">
+          <Argument type="String" name="nombreTransport"/>
+        </Method>
+        <Method name="getPrecio" returnType="int" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="int" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Destino" package="pojo" visibility="public" xPosition="1577.0" yPosition="94.0">
+      <Fields>
+        <Field name="idlugar" type="long" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="direccion" type="String" visibility="private"/>
+        <Field name="telefono" type="String" visibility="private"/>
+        <Field name="codigoPost" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="long" name="idlugar"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="int" name="codigoPost"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdlugar" returnType="long" visibility="public"/>
+        <Method name="setIdlugar" returnType="void" visibility="public">
+          <Argument type="long" name="idlugar"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getCodigoPost" returnType="int" visibility="public"/>
+        <Method name="setCodigoPost" returnType="void" visibility="public">
+          <Argument type="int" name="codigoPost"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="pojo" visibility="public" xPosition="2254.0" yPosition="371.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellidos" type="String" visibility="private"/>
+        <Field name="telefono" type="String" visibility="private"/>
+        <Field name="viaje" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="viaje"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellidos" returnType="String" visibility="public"/>
+        <Method name="setApellidos" returnType="void" visibility="public">
+          <Argument type="String" name="apellidos"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getViaje" returnType="String" visibility="public"/>
+        <Method name="setViaje" returnType="void" visibility="public">
+          <Argument type="String" name="viaje"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="trasM" source="controller.TransporteContoller" target="model.TransporteModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="TrasnporteC" source="view.TransporteView" target="controller.TransporteContoller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="log" source="view.Principal" target="view.Login" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaTransporte" source="view.TransporteView" target="pojo.Transporte" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Transporte&gt;"/>
+    <HasRelation name="destinoM" source="controller.DestinoController" target="model.DestinoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="DestinoC" source="view.Principal" target="controller.DestinoController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controller.DestinoController" target="pojo.Destino" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controller.TransporteContoller" target="pojo.Transporte" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.TransporteModel" target="pojo.Transporte" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.ViajeModel" target="pojo.Viaje" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.DestinoModel" target="pojo.Destino" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="trans" source="view.TransporteView" target="pojo.Transporte" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaDestino" source="view.Principal" target="pojo.Destino" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Destino&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
